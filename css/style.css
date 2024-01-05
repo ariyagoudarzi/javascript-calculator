@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  outline: none !important;
+}
+body {
+  background-color: #111;
+}
+.calcbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  background: #1d1d1d;
+  border-radius: 5px;
+  padding: 10px;
+  width: 25%;
+  height: max-content;
+}
+@media only screen and (max-width: 768px) {
+  .calcbox {
+    width: 55%;
+  }
+}
+.opereitorsbox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.opereitorsbtn {
+  font-size: 16px !important;
+  background-color: rgb(132, 0, 255);
+  border: none;
+  padding: 15px;
+  margin: 4px;
+  border-radius: 4px;
+  color: #ededed;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.opereitorsbtn:hover {
+  background-color: #6100bc;
+}
+.resultbox {
+  border-bottom: 1px solid rgb(237, 237, 237, 0.1);
+  transition: all 0.3s;
+  padding: 35px 10px 10px 10px;
+  margin: 10px 5px;
+  color: #ededed;
+  font-size: 25px;
+  font-weight: 500;
+}
+.github-logo {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .github-logo {
+    bottom: 7%;
+    right: 15%;
+  }
+}
